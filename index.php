@@ -31,7 +31,7 @@ require_once 'db/connect.php';
 
         <img src="images/logo.png" alt="" class="logo">
 
-        <h1><span class="caption">Новый</span> Фитнесс зал f</h1> 
+        <h1><span class="caption">Новый</span> Фитнесс зал</h1> 
     </div>
 </header>
 
