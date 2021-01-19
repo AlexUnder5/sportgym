@@ -1,0 +1,282 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.45;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 32px;
+    padding-left: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 3px;
+    height: 100%;
+    background-color: #ea4c23;
+}
+
+.section-title .caption {
+    color: #ea4c23;
+}
+
+.about-desc {
+    margin: 0;
+}
+
+.done-title {
+    margin: 0;
+    margin-bottom: 1px;
+
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.done-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px;
+    margin: 10px auto;
+    background-color: #56d835;
+}
+
+.done-title-error::after {
+    background-color: #bd542b;
+}
+
+#header {
+    padding: 30px 0;
+    background-color: #252525;
+}
+
+.header-main {
+    min-height: 100vh;
+    background: #252525 url('../images/banner.jpg');
+}
+
+#header nav {
+    text-align: center;
+}
+
+#header nav a {
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+#header nav a:hover {
+    color: #ea4c23;
+}
+
+#header .logo {
+    display: block;
+    margin: 40px auto;
+}
+
+#header h1 {
+    margin: 0;
+    margin-top: 140px;
+
+    font-size: 52px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+#header h1 .caption {
+    display: block;
+    font-size: 0.5em;
+    font-weight: 500;
+}
+
+.programs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.programs .program {
+    position: relative;
+    width: 33.33333%;
+    padding: 15px;
+}
+
+.programs .program .program-inner {
+    height: 250px;
+}
+
+.programs .program h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.trainers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.trainers .trainer {
+    width: 50%;
+    padding: 15px;
+}
+
+.site-video {
+    width: 100%;
+    height: 580px;
+}
+
+.recording {
+    max-width: 560px;
+}
+
+.recording label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.recording input {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+}
+
+.recording textarea {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.recording button {
+    display: inline-block;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background-color: #ea4c23;
+    cursor: pointer;
+}
+
+#footer {
+    color: #fff;
+    background-color: #252525;
+}
+
+#footer .logo {
+    display: block;
+    margin: 0 auto;
+}
+
+#footer nav {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#footer nav a {
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#footer nav a:hover {
+    color: #ea4c23;
+}
+
+#footer .footer-top {
+    padding-top: 90px;
+    padding-bottom: 10px;
+}
+
+#footer .copy {
+    margin: 0;
+    padding: 20px 0;
+
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    #header h1 {
+        font-size: 32px;
+    }
+
+    .programs .program {
+        width: 50%;
+    }
+
+    .programs .program .program-inner {
+        height: 180px;
+    }
+
+    .programs .program h3 {
+        font-size: 14px;
+    }
+
+    .trainers .trainer {
+        width: 100%;
+    }
+}
